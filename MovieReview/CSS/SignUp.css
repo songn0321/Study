@@ -1,0 +1,59 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  width: 1000px;
+  margin: 0px auto;
+}
+.movie_title {
+  cursor: pointer;
+  font-family: "Akaya Telivigala", cursive;
+  font-size: 100px;
+  color: #fdcb6e;
+  text-align: center;
+  margin: 10px auto;
+}
+.singUp_wrap {
+  margin-top: 50px;
+}
+.input_box {
+  width: 40%;
+  margin: 10px auto 10px;
+}
+.input_box2 {
+  position: relative;
+  top: -25px;
+}
+.alert_no {
+  display: none;
+}
+.signup_Alert {
+  width: 40%;
+  position: relative;
+  left: 305px;
+  top: -10px;
+  color: red;
+  font-size: 14px;
+  display: block;
+}
+.alert2 {
+  top: -22px;
+}
+.signup_btn {
+  text-align: center;
+}
+.signup_btn2 {
+  cursor: pointer;
+  background-color: yellowgreen;
+  border-radius: 8px;
+  padding: 20px;
+  border: none;
+  width: 50%;
+  color: white;
+  font-weight: 700;
+}
+.signup_btn2:hover {
+  background-color: #daf69e;
+}

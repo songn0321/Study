@@ -1,0 +1,192 @@
+/*전체 컨테이너에 대한 영역*/
+.warp {
+  width: 1200px;
+  margin: 0 auto; /*위,아래 여백은 0px 오른쪽 왼쪽 여백은 자동으로 조절*/
+  /*border:1px solid black;*/
+}
+/*로고에 대한 영역*/
+.header {
+  position: relative;
+  left: 42%;
+  top: 10px;
+  color: black;
+  font-size: 100px;
+  font-family: "Dancing Script", cursive;
+  font-family: "Jomhuria", cursive;
+}
+/*드롭메뉴에 대한 영역*/
+.downmenu > li {
+  float: left;
+  position: relative;
+  background: #fa7a8f;
+  width: 20%;
+  margin-bottom: 10px;
+}
+.downmenu > li > a {
+  display: block;
+  font-size: 15px;
+  color: white;
+  font-family: "Dancing Script", cursive;
+  font-family: "Jomhuria", cursive;
+  font-family: "Sunflower", sans-serif;
+  text-align: center;
+  height: 60px;
+  line-height: 60px;
+}
+.downmenu > li:hover {
+  /*hover:마우스를 댔을때 색상변화*/
+  background: #fcc0c0;
+  transition: all 0.5s ease-in-out;
+}
+
+.downmenu ul {
+  position: absolute;
+  top: -9999px; /*위쪽으로 완전히 감추기*/
+}
+
+/*태그 기본 설정*/
+body,
+ul {
+  margin: 0;
+  padding: 0;
+}
+ul {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+}
+
+/*정기구독 소개창*/
+.con {
+  position: relative;
+  left: 90px;
+  top: -60px;
+  width: 350px;
+  height: 350px;
+  line-height: 22px;
+  font-family: "Dancing Script", cursive;
+  font-family: "Jomhuria", cursive;
+  font-family: "Sunflower", sans-serif;
+  font-size: 15px;
+  display: inline-block;
+  text-align: center;
+  border: 2px solid white;
+  background-color: #fff0ff;
+}
+/*정기구독 신청하기 버튼*/
+#button {
+  cursor: pointer;
+  position: relative;
+  padding: 10px;
+  border: none;
+  background-color: white;
+  color: #f15b74;
+  top: 15px;
+}
+/*정기구독 소개 이미지,동영상 첨부*/
+.intro {
+  float: left;
+  margin-top: -60px;
+}
+.int1 {
+  position: relative;
+  left: 50px;
+  top: 5px;
+}
+.int2 {
+  position: relative;
+  left: 65px;
+  top: 5px;
+  padding-top: -500px;
+  background-color: #f1d7fc;
+}
+/*리뷰 소개*/
+.rewarp {
+  float: right;
+}
+.review {
+  display: inline-block;
+  position: relative;
+  right: 60px;
+  top: 10px;
+}
+.review2 {
+  position: relative;
+  right: 60px;
+  top: -230px;
+  color: #c24df0;
+  text-align: center;
+  font-weight: bolder;
+  font-family: "Dancing Script", cursive;
+  font-family: "Jomhuria", cursive;
+  font-family: "Sunflower", sans-serif;
+  text-shadow: 0px 0 white, 0 2px white, 2px 0 white, 0 0px white;
+  /*글씨에 그림자 설정하기*/
+}
+/*FAQ부분 설정*/
+.FAQ {
+  float: left;
+  position: relative;
+  left: 50px;
+  top: 10px;
+  text-align: center;
+  width: 350px;
+  height: 250px;
+  background-color: #fff0ff;
+  border: 3px solid #ffeaed;
+}
+.FAQ li > a {
+  display: block;
+  font-size: 15px;
+  color: black;
+  font-family: "Dancing Script", cursive;
+  font-family: "Jomhuria", cursive;
+  font-family: "Sunflower", sans-serif;
+  text-align: center;
+  height: 40px;
+  line-height: 40px;
+}
+.FAQ li:hover {
+  background-color: #d8a4ec;
+  transition: all 0.7s ease-in-out;
+}
+/*footer 부분 설정*/
+.ft1 {
+  clear: both; /*위에 설정한 배치속성 초기화 설정*/
+  height: 100px;
+  background-color: #f15b74;
+  color: white;
+  position: relative;
+  margin: 0 auto;
+  top: -200px;
+}
+.nv3 {
+  position: relative;
+  top: 15px;
+}
+.nv3 > ul > li {
+  float: left;
+  margin-left: 7%;
+}
+.nv3 > ul > li > a {
+  color: white;
+}
+
+.l1 {
+  padding: 10px 0px;
+}
+.nv4 {
+  position: relative;
+  display: inline-block;
+  left: 26%;
+  top: 30px;
+}
+.nv4 ul {
+  list-style-type: none; /*마크 해제*/
+}
+.nv4 > ul > li {
+  float: left;
+  margin-left: 30px;
+  font-size: 11px;
+}

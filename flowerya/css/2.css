@@ -1,0 +1,235 @@
+/*인기상품 사진 위에 css로 애니메이션 삽입*/
+.banner{
+    float:left;
+    left:50px;
+    position:relative;
+    display:block;
+}
+.banner> img{
+max-width:100%;
+}
+.banner> span.text{
+position: absolute;
+top:50%;
+left:0%;
+transform: translateY(-50%);
+display:none;
+width:100%;
+font-family:'돋움체';
+font-size:70px;
+color:#fff;
+font-weight: 900;
+text-align: center;
+text-shadow: -1px 0 black, 0 1px  black, 1px 0  black, 0 -1px  black;
+}    
+.banner::before, .banner::after{
+content: "";
+position: absolute;
+top: 50%;
+left: 50%;
+width:95%;
+height:95%;
+transform: translate(-50%,-50%);
+transition:all.8s;
+}
+.banner::before{/*before 해당 태그의 앞에 놓여진다.*/
+border-top: 2px solid #fff;
+border-bottom: 2px solid #fff;
+width:0;
+}
+.banner::after{/*after 해당 태그의 다음 위치에 놓여진다.*/
+border-left:2px solid #fff;
+border-right:2px solid #fff;
+height:0;
+}
+.banner:hover span.text{display:block;}
+.banner:hover::before{width: 95%;}
+.banner:hover::after{height:95%;}
+
+.banner2{
+position:relative;
+left:75px;
+display:inline-block;
+}
+.banner2> img{
+max-width:100%;
+}
+.banner2> span.text{
+position: absolute;
+top:50%;
+left:0%;
+transform: translateY(-50%);
+display:none;
+width:100%;
+font-family:'돋움체';
+font-size:70px;
+color:#fff;
+font-weight: 900;
+text-align: center;
+text-shadow: -1px 0 black, 0 1px  black, 1px 0  black, 0 -1px  black;
+}    
+.banner2::before, .banner2::after{
+content: "";
+position: absolute;
+top: 50%;
+left: 50%;
+width:95%;
+height:95%;
+transform: translate(-50%,-50%);
+transition:all.8s;
+}
+.banner2::before{
+border-top: 2px solid #fff;
+border-bottom: 2px solid #fff;
+width:0;
+}
+.banner2::after{
+border-left:2px solid #fff;
+border-right:2px solid #fff;
+height:0;
+}
+.banner2:hover span.text{display:block;}
+.banner2:hover::before{width: 95%;}
+.banner2:hover::after{height:95%;}
+
+.banner3{
+position:relative;
+left:90px;
+display:inline-block;
+
+}
+.banner3> img{   
+max-width:100%;
+}
+.banner3> span.text{
+position: absolute;
+top:50%;
+left:0%;
+transform: translateY(-50%);
+display:none;
+width:100%;
+font-family:'돋움체';
+font-size:70px;
+color:#fff;
+font-weight: 900;
+text-align: center;
+text-shadow: -1px 0 black, 0 1px  black, 1px 0  black, 0 -1px  black;
+}    
+.banner3::before, .banner3::after{
+content: "";
+position: absolute;
+top: 50%;
+left: 50%;
+width:95%;
+height:95%;
+transform: translate(-50%,-50%);
+transition:all.8s;
+}
+.banner3::before{
+border-top: 2px solid #fff;
+border-bottom: 2px solid #fff;
+width:0;
+}
+.banner3::after{
+border-left:2px solid #fff;
+border-right:2px solid #fff;
+height:0;
+}
+.banner3:hover span.text{display:block;}
+.banner3:hover::before{width: 95%;}
+.banner3:hover::after{height:95%;}
+
+.banner4{
+    float:left;
+    position:relative;
+    left:50px;
+    display:block;
+    
+}
+.banner4>img{
+max-width:100%;
+}
+.banner4>span.text{
+position: absolute;
+top:50%;
+left:0%;
+transform: translateY(-50%);
+display:none;
+width:100%;
+font-family:'돋움체';
+font-size:70px;
+color:white;
+font-weight: 900;
+text-align: center;
+text-shadow: -1px 0 black, 0 1px  black, 1px 0  black, 0 -1px  black;
+}    
+.banner4::before, .banner4::after{
+content: "";
+position: absolute;
+top: 50%;
+left: 50%;
+width:95%;
+height:95%;
+transform: translate(-50%,-50%);
+transition:all.8s;
+}
+.banner4::before{
+border-top: 2px solid #fff;
+border-bottom: 2px solid #fff;
+width:0;
+}
+.banner4::after{
+border-left:2px solid #fff;
+border-right:2px solid #fff;
+height:0;
+}
+.banner4:hover span.text{display:block;}
+.banner4:hover::before{width: 95%;}
+.banner4:hover::after{height:95%;}
+
+.banner5{
+    position:relative;
+    left:75px;
+    display:inline-block;
+}
+    
+.banner5> img{
+max-width:100%;
+}
+.banner5>span.text{
+position: absolute;
+top:50%;
+left:0%;
+transform: translateY(-50%);
+display:none;
+width:100%;
+font-family:'돋움체';
+font-size:70px;
+color:white;
+font-weight: 900;
+text-align: center;
+text-shadow: -1px 0 black, 0 1px  black, 1px 0  black, 0 -1px  black;
+}    
+.banner5::before, .banner5::after{
+content: "";
+position: absolute;
+top: 50%;
+left: 50%;
+width:95%;
+height:95%;
+transform: translate(-50%,-50%);
+transition:all.8s;
+}
+.banner5::before{
+border-top: 2px solid #fff;
+border-bottom: 2px solid #fff;
+width:0;
+}
+.banner5::after{
+border-left:2px solid #fff;
+border-right:2px solid #fff;
+height:0;
+}
+.banner5:hover span.text{display:block;}
+.banner5:hover::before{width: 95%;}
+.banner5:hover::after{height:95%;}

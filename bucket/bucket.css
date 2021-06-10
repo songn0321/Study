@@ -1,0 +1,118 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	font-family: 'Do Hyeon', sans-serif;
+}
+.main-background {
+	background-image: url(assets/bucket_main.jpg);
+	background-size:cover;
+	background-position:center;
+	color:white;
+	border-radius: 0px;
+	margin-bottom: 10px;
+}
+
+.black-background {
+	background: rgba(0,0,0,0.5);
+	position: fixed;
+	z-index: 5;
+	width: 100%;
+	height: 100%;
+	display: block;
+	transition: all 1s;
+	transform: translateY(-1000px);
+	/*visibility:hidden;*/
+	/*	opacitiy 투명도 이용가능*/
+}
+
+.white-background {
+	background: white;
+	width: 80%;
+	margin: 100px auto;
+	padding: 20px;
+	border-radius: 10px;
+}
+
+.nav-menu {
+	display: flex;
+	justify-content: space-between;
+	padding: 15px;
+	align-items: center;
+}
+
+.menu-btn {
+	background: white;
+}
+
+.menu-slide {
+	display: none;
+}
+
+.menu-modal {
+	cursor: pointer;
+}
+
+.title-check {
+	display: none;
+}
+
+.contents-check {
+	display: none;
+}
+
+.slide-menu {
+	display: none;
+}
+
+
+.left-menu {
+	width:150px;
+	height: 100%;
+	background: black;
+	color: white;
+	position: fixed;
+	margin-left: -150px;
+}
+
+.slide_down {
+	transform: translateY(0px)
+}
+
+.title_list {
+	width:100%;
+	margin: 0px 10px 10px 20px;
+}
+
+.List_title {
+	font-size: 25px;
+}
+
+.list {
+	margin-left: 30px;
+	list-style: none;
+}
+.done {
+	margin-left: 30px;
+	list-style: none;
+}
+.task{
+	max-width: 500px;
+	border: 1px solid #e3e3e3;
+	border-radius: 5px;
+	width:80%;
+	padding: 5px 10px;
+	margin: 5px 0px;
+}
+.chk{
+	margin-left: 5px;
+	cursor: pointer;
+	float: right;
+	color:#33a9ff;
+}
+.del{
+	margin-left: 5px;
+	cursor: pointer;
+	float: right;
+	color: #f5823a;
+}
+

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>flowerya</title>
+<!--onclick 이벤트 실행을 위한 자바스크립트사용-->
+<script>
+    function hello(){
+        alert("정기구독을 통한 힐링을 얻어가세요");
+    }
+</script>
+<!-- 외부 별도 파일로 작성한 스타일시트 불러오기 -->
+<link href="../css/1.css" rel="stylesheet">
+<link href="../css/2.css" rel="stylesheet">
+<!-- 외부에서 폰트 불러오기 -->
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Jomhuria&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Jomhuria&family=Sunflower:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- 최상단 페이지 이름 -->
+<div class="warp">
+    <a href="#"><hl class="header">flowerya</hl></a>
+    <div> 
+        <ul class="downmenu"> <!--상단메뉴-->
+            <li><a href="#">꽃다발.대형꽃다발</a></li>
+            <li><a href="#">꽃바구니.화환</a></li>
+            <li><a href="#">정기구독</a></li>
+            <li><a href="#">추가상품</a></li>
+            <li><a href="#">택배</a></li>
+        </ul>
+        <!-- 인기상품 소개 section -->
+        <a href="#"><div class="banner">
+        <img src="../img/2.jpg">
+        <span class="text">꽃다발 top1</span>
+        </div></a>
+        <a href="#"><div class="banner2">
+            <img src="../img/1.jpg">
+            <span class="text">꽃다발 top2</span>
+        </div></a>   
+        <a href="#"><div class="banner3">
+            <img src="../img/3.jpg">
+            <span class="text">꽃다발 top3</span>
+        </div></a>
+        <a href="#"><div class="banner4">
+            <img src="../img/4.jpg">
+            <span class="text">정기구독 top1</span>
+        </div></a>
+        <a href="#"><div class="banner5">
+            <img src="../img/5.png">
+            <span class="text">정기구독 top2</span>
+    </div></a>
+    <!--정기구독 프로모션 소개-->
+    <div class="con">
+        
+        <p><h2>flowerya 정기구독 프로모션</h2><br>
+
+        당신만을 위한 새로운 꽃을 받아보세요.<br>
+        flowerya에서 당신에게 가장 어울리는<br> 
+        아름다운 꽃을 선사합니다.<br>
+        꽃과 함께하는 행복한시간을 가져보세요.<br>
+        
+        
+        <p>&lt;&lt;flowerya정기구독 이벤트&gt;&gt;<br>
+        flowerya정기구독을 하시는 고객 여러분께<br>
+        3개월(6회차)동안 정기구독 금액을 15%할인해드립니다.<p>
+        <!--정기구독 신청페이지로 넘어갈 수 있는 버튼-->    
+        <p><a href="#"><input type="button" value="정기구독 신청" id="button"
+            onclick="hello()"></a> 
+    </div> <!--정기구독 소개 이미지 동영상-->
+    <div class="intro">
+        <img src="../img/정기구독.jpg" width="725px" height="350px" class="int1">
+        <video src="../video/정기구독.avi" width="350px" height="350px" controls class="int2"></video>
+    </div>
+    <!--Review  section-->
+    <div class="rewarp">
+        <div class="review">
+            <img src="../img/review1.JPG" width="350px" height="250px">
+            <img src="../img/review2.JPG" width="350px" height="250px">
+        </div>
+        <div class="review2">
+            <p>Review</p>
+            " flowerya를 통해 2주에 한번 스스로에게 힐링을 선사 할 수 있어 좋아요.<br>
+            꽃 상태도 항상 좋고 빠른 피드백도 더할 나위 없이 좋네요."<br>
+            <center>-정기구독 회원 김xx님-</center>
+            <p>
+            " 직접 방문하지 않고 온라인을 통해서 주문하고<br>
+            원하는 꽃 원하는 크기로 집에서 바로 받아 볼 수 있어서 자주 애용해요<br>
+            선물을 해도 항상 평이 좋아 만족도도 높습니다"<br>
+            <center>-재구매 3회 회원 정xx님-</center>
+        </div>
+    </div>
+    <!--FAQ section-->
+    <div class="FAQ">
+        <p>FAQ 자주묻는 질문
+        <ul>
+            <li><a href="#">정기구독 날짜를 변경 할 수 있나요?</a></li>
+            <li><a href="#">배송 시간을 지정하고 싶어요</a></li>
+            <li><a href="#">주문을 취소하고 싶어요</a></li>
+            <li><a href="#">꽃 상태가 좋지 않아요</a></li>
+            <li><a href="#">배송가능지역을 알고싶어요</a></li>
+        </ul>
+    </div>
+    <!--footer -->
+    <footer class="ft1">
+        <nav class="nv3">
+            <ul>
+                <li><a href="#">&nbsp;instagram</a></li>
+                <li class="l1">|</li>
+                <li><a href="#">&nbsp;Facebook</a></li>
+                <li class="l1">|</li>
+                <li><a href="#">고객서비스 센터(월-금 09:00-18:00)<br>
+                <center>1588-0000</center></a></li>
+                <li class="l1">|</li>
+                <li><a href="#">제휴안내</a></li>
+        </ul><br>
+        </nav> 
+        <nav class="nv4">
+            <ul>
+                <li>상호명 : flowerya</li>
+                <li>사업자번호 : 123-45-56789</li>
+                <li>소재지 : 서울특별시 강남구</li>
+                <li>Fax:031-123-4567</li>
+            </ul>
+        </nav>
+    </footer>    
+</div>   
+</body>
+</html>

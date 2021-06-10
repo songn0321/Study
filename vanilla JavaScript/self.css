@@ -1,0 +1,43 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+/*이미지슬라이드 css*/
+
+.slide-container {
+	width:300vw;
+	transition: transform 1s;
+}
+.slide-box1 {
+	background-image: url("../jquery&javascript/%EB%85%B8%EB%9E%80%EC%83%89.jpg");
+	width: 100vw;
+	height: 300px;
+	float: left;
+}
+
+.slide-box2 {
+	background-image: url("../jquery&javascript/%EC%97%B0%EB%91%90%EC%83%89.jpg");
+	width: 100vw;
+	height: 300px;
+	float: left;
+}
+
+.slide-box3 {
+	background-image: url("../jquery&javascript/%EB%B3%B4%EB%9D%BC%EC%83%89.png");
+	width: 100vw;
+	height: 300px;
+	float: left;
+}
+
+.slide-nextbtn {
+	position: absolute;
+	top: 45%;
+	right: 0;
+}
+
+.slide-prevbtn {
+	position: absolute;
+	top: 45%;
+	left: 0;
+}

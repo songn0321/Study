@@ -1,0 +1,57 @@
+*{
+    box-sizing: border-box;
+}
+th,td {
+    border-bottom: 1px solid blue;
+    padding:20px;
+    vertical-align: middle;
+    color: gray;
+}
+
+table {
+    border-collapse: collapse; /*테이블 사이사이의 간격 없애주기*/ 
+}
+
+.cart-wrap {
+    width:100%;
+    background-color: skyblue;
+    padding: 30px;
+}
+
+.total {
+    width:800px;
+}
+
+.cart-table {
+    color: cornflowerblue;
+    width:100%;
+    border-radius: 5px;
+    margin:20px auto;
+    background-color: white;
+}
+p{
+    margin: 5px;
+}
+
+
+.cart-link {
+    vertical-align: bottom;
+}
+
+.cart-btn {
+    background-color: darkblue;
+    color:skyblue;
+    padding: 20px;
+    border: none;
+    border-radius: 4px;
+    display: block;
+    margin-left: auto;
+    margin-right:10px;
+    cursor: pointer;
+}
+
+.cart-container {
+    width:100%;
+    max-width: 700px;
+    margin:auto;
+}

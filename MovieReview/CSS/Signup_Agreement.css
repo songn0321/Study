@@ -1,0 +1,52 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  width: 1000px;
+  margin: 0 auto;
+}
+.agreement_container {
+  width: 100%;
+  margin: 30px auto;
+}
+.movie_title {
+  cursor: pointer;
+  font-family: "Akaya Telivigala", cursive;
+  font-size: 100px;
+  color: #fdcb6e;
+  text-align: center;
+  margin: 10px auto;
+}
+.signUP {
+  text-align: center;
+  width: 800px;
+  height: 100%;
+  display: block;
+  margin: 10px auto;
+}
+.agreement_textarea {
+  border: 1px solid black;
+  overflow: auto;
+  display: block;
+  width: 100%;
+  margin: 20px auto 10px;
+  height: 300px;
+  font-size: 14px;
+}
+.chk_label {
+  position: relative;
+  left: 815px;
+}
+.submit {
+  cursor: pointer;
+  background-color: #acacac;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  position: relative;
+  left: 900px;
+  top: 5px;
+}

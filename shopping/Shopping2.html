@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+
+    <title>Shopping</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jua&display=swap"
+      rel="stylesheet"
+    />
+    <script>
+      function buy() {
+        alert("주문이 완료되었습니다");
+      }
+    </script>
+    <style>
+      * {
+        font-family: "Jua", sans-serif;
+      }
+
+      .wrap {
+        width: 1000px;
+      }
+
+      .shop_img {
+        margin: 15px auto;
+        width: 600px;
+        height: 300px;
+        background-image: url(https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/mbp16touch-silver-gallery4-201911?wid=4000&hei=3072&fmt=jpeg&qlt=80&op_usm=0.5,0.5&.v=1572892071190);
+        background-size: cover;
+        background-position: center;
+      }
+
+      .shop_content {
+        width: 600px;
+        margin: auto;
+      }
+
+      .shop_price {
+        font-size: 18px;
+      }
+
+      .shop_btn {
+        display: block;
+        background-color: dodgerblue;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        width: 80px;
+        padding: 5px;
+        margin: 0 auto 10px auto;
+      }
+      #usd {
+        color: blue;
+      }
+    </style>
+    <script>
+      $(document).ready(function () {
+        $.ajax({
+          type: "GET",
+          url: "https://api.manana.kr/exchange/rate.json",
+          data: {},
+          success: function (response) {
+            let usd = response[1]["rate"];
+            let temp_html = `<div>달러-원 환율: ${usd}</div>`;
+            $("#usd").append(temp_html);
+          },
+        });
+      });
+    </script>
+  </head>
+
+  <body>
+    <div class="wrap">
+      <div class="shop_img"></div>
+      <div class="shop_content">
+        <h1>
+          MacBook Pro - Silver
+          <span class="shop_price">가격 : 3,190,000원 </span>
+        </h1>
+        <span id="usd"></span>
+        <p>
+          2.6GHz 6코어 9세대 Intel Core i7 프로세서(최대 4.5GHz Turbo Boost),
+          16GB 2666MHz DDR4 메모리, AMD Radeon Pro 5300M(4GB GDDR6 메모리),
+          512GB SSD 저장 장치, True Tone을 지원하는 16형 Retina 디스플레이,
+          Thunderbolt 3 포트 4개, Touch Bar 및 Touch ID, 백라이트 Magic Keyboard
+          - 한국어
+        </p>
+        <div class="input-group mb-3">
+          <div class="input-group-prepend">
+            <span class="input-group-text" id="inputGroup-sizing-default"
+              >주문자이름</span
+            >
+          </div>
+          <input
+            type="text"
+            class="form-control"
+            aria-label="Default"
+            aria-describedby="inputGroup-sizing-default"
+          />
+        </div>
+        <div class="input-group mb-3">
+          <div class="input-group-prepend">
+            <label class="input-group-text" for="inputGroupSelect01"
+              >수량</label
+            >
+          </div>
+          <select class="custom-select" id="inputGroupSelect01">
+            <option selected>--수량을 선택하세요--</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+          </select>
+        </div>
+        <div class="input-group mb-3">
+          <div class="input-group-prepend">
+            <span class="input-group-text">주소</span>
+          </div>
+          <input
+            type="text"
+            class="form-control"
+            aria-label="Default"
+            aria-describedby="inputGroup-sizing-default"
+          />
+        </div>
+        <div class="input-group mb-3">
+          <div class="input-group-prepend">
+            <span class="input-group-text">전화번호</span>
+          </div>
+          <input
+            type="tel"
+            class="form-control"
+            aria-label="Default"
+            aria-describedby="inputGroup-sizing-default"
+          />
+        </div>
+        <button class="shop_btn" onclick="buy()">주문하기</button>
+      </div>
+    </div>
+  </body>
+</html>
